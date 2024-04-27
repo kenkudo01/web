@@ -1,0 +1,465 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/*  
+.form {
+  background-image: url('ATask/texture.jpeg'); 
+  background-size: cover;
+  background-position: center;
+
+}
+*/
+.over
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+
+  body {
+    color: #24292e;
+    font-family: "Sawarabi Gothic";
+    background-color: #000000;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+  }
+  
+  p {
+    font-size: 16em;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  li {
+    list-style: none;
+    font-size: 16em;
+  }
+  
+  video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 1;
+    left: 0;
+    object-fit: cover;
+  }
+
+
+  /*-------------header------------------*/
+ 
+  #header {
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 170px;
+    margin: 0 auto;
+    padding: 40px 100px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+
+  .active {
+    color: rgb(63, 61, 61); 
+    text-decoration: underline;
+}
+
+  #header h1{
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 4em;
+  }
+
+  #header ul {
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+  }
+  
+  #header li {
+    font-size: 1.3em;
+    margin-left: 30px;
+  }
+  
+  #header li a {
+    color: #fff;
+    transition: all 0.3s;
+  }
+  
+  #header li a:hover {
+    opacity: 0.5;
+  }
+  
+  #header li img.icon {
+    width: 30px;
+  }
+/*---------index.html------------*/
+  .site-title {
+    line-height: 1px;
+    font-weight: 600;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+  }
+
+  .site-title h1{
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  .site-title a {
+    display: block;
+    color: #ffffff;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#0c76a7;
+    mix-blend-mode: overlay;
+}
+
+.text {
+    position: relative;
+    z-index: 10;
+    left: 0;
+    padding: 200px 0px 50px;
+}
+
+.text h2 {
+    font-size: 5em;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1em;
+}
+
+.text h3 {
+    font-size: 4em;
+    font-weight: 50;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1em;
+}
+
+.text p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 20px 0;
+    color: #fff;
+}
+
+.text a:hover  {
+    letter-spacing: 6px;
+}
+
+.help
+{
+  font-size: 16em;
+}
+
+.slider{
+  padding-top: auto;
+  margin-top: auto;
+}
+
+.Home {
+    color: white;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.ome table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.home video
+{
+  border: 1px solid white;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+thead {
+    background-color: none;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: none;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: none;
+}
+
+tbody tr:hover {
+    background-color: none;
+}
+
+td {
+    color: white;
+}
+
+meter
+{
+  color: #807e7e;
+}
+
+
+a {
+    background-color: none;
+    color: #ffffff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.slider {
+  padding-top: 100px;
+}
+
+
+/*-------------form-------------------------------------------------*/
+
+.container {
+  width: 80%;
+  margin: 50px auto;
+  padding: 50px;
+  border: 1px solid white;
+  color: white;
+  line-height: 3;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  margin-top: 10px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.radio-group {
+  margin: 10px 0;
+}
+.radio-group input {
+  margin-right: 5px;
+}
+.radio-group label {
+  margin-right: 20px;
+}
+.checkbox-group {
+  margin: 10px 0;
+}
+button {
+  padding: 10px 15px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #000;
+  color: white;
+  cursor: pointer;
+}
+button:reset {
+  background-color: #ccc;
+  color: black;
+}
+
+/*--------------------------------------------------------------*/
+
+.ranking h2{
+  color:  white;
+  padding-left: 50px;
+  padding-top: 50px;
+}
+
+.top1 {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  border: 1px solid #000;
+  padding: 20px;
+  color: white;
+  padding-top: 75px;
+}
+
+.top1 img {
+  width: 45%;
+  height: 45%;
+  margin-right: 20px;
+  background-color: #ccc;
+}
+
+.top1 h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-left: 30px;
+}
+
+.top1 p {
+  margin-top: 0;
+  font-size: 15px;
+}
+
+.top1 a.more {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+hr.mid {
+  height: 1px;
+  background-color: #000;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.top1 table{
+  border-collapse: collapse;
+}
+
+.top1 td, th {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  line-height: 1.2;
+  border: none;
+}
+
+
+
+.top2 {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row-reverse;
+  border: 1px solid #000;
+  padding: 20px;
+  padding-top: 75px;
+  color: white;
+}
+
+.top2 img {
+  width: 45%;
+  height: auto;
+  margin-left: 20px;
+  background-color: #ccc;
+}
+
+.top2 video {
+  width: 45%;
+  height: auto;
+  margin-left: 20px;
+}
+
+.top2 h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-right: 30px;
+}
+
+.top2 p {
+  margin-top: 0;
+  font-size: 15px;
+}
+
+.top2 a.more {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.top2 table {
+  border-collapse: collapse;
+}
+
+.top2 td, .top2 th {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  line-height: 1.2;
+  border: none;
+}
+
+
+
+/*-----------*/
+
+.Science-Fiction {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.sliderArea, .sersch {
+  flex: 1;
+  padding: 0 25px;
+}
+
+.sliderArea {
+  max-width: 50%;
+}
+
+.sersch {
+  max-width: 50%;
+  padding-top: 20px;
+  padding: 0 25px;
+}
+
+.slider ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.slider li img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.form body{
+  background-image: url("ATask/texture.jpeg");
+}
